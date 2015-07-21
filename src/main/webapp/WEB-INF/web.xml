@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         metadata-complete="false">
+
+        <context-param>
+            <param-name>resteasy.servlet.mapping.prefix</param-name>
+            <param-value>/rest-service</param-value>
+        </context-param>
+
+        <servlet>
+            <servlet-name>Resteasy</servlet-name>
+            <servlet-class>javax.ws.rs.core.Application</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+            <servlet-name>Resteasy</servlet-name>
+            <url-pattern>/rest-service/*</url-pattern>
+        </servlet-mapping>
+
+        <env-entry>
+            <env-entry-name>max-set-size</env-entry-name>
+            <env-entry-type>java.lang.Integer</env-entry-type>
+            <env-entry-value>25</env-entry-value>
+        </env-entry>
+ 
+</web-app>
