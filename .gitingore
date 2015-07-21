@@ -1,0 +1,10 @@
+# .gitignore
+#  Each line represents a file or set of files that will be excluded
+#  from the repository
+*.class
+*~
+~lock.*
+~$*
+.DS_Store
+*.svn/
+*.nogit/
