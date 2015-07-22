@@ -17,6 +17,11 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+        <repository>
+            <id>eap course</id>
+            <name>randy thomas's Git based repo</name>
+            <url>https://github.com/randythomas/maven-repo/raw/master/</url>
+        </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
